@@ -23,5 +23,18 @@ public class PingPong implements Runnable {
             }
         }
     }
+
+    public static int getValue(){
+        try {
+            throw new NullPointerException();
+        } catch (Exception e){
+            throw new ArithmeticException();
+        }
+        finally {
+            return 1;
+        }
+
+    }
+
 }
 
